@@ -41,7 +41,7 @@ Mystery Box Platform with Live Streaming
 
 ### Backend
 - **Runtime:** Node.js 18+
-- **Framework:** Express.js
+- **Framework:** NestJS
 - **Database:** MongoDB 6+
 - **Cache:** Redis
 - **Authentication:** JWT
@@ -53,10 +53,6 @@ Mystery Box Platform with Live Streaming
 - **Styling:** Tailwind CSS
 - **State:** Zustand
 - **Routing:** React Router v6
-
-### DevOps
-- **Container:** Docker, Docker Compose
-- **Proxy:** Nginx
 
 ---
 
@@ -91,7 +87,7 @@ npm install
 ```bash
 # Backend (Terminal 1)
 cd backend
-npm run dev
+npm run start:dev
 
 # Frontend (Terminal 2)
 cd frontend
@@ -119,16 +115,6 @@ docker-compose logs -f
 # Stop all services
 docker-compose down
 ```
-
-### Services
-
-| Service | Port | Description |
-|---------|------|-------------|
-| MongoDB | 27017 | Database |
-| Redis | 6379 | Cache |
-| Backend | 3000 | API Server |
-| Frontend | 5173 | Web App |
-| Nginx | 80 | Reverse Proxy |
 
 ---
 
@@ -180,24 +166,7 @@ docker-compose down
 
 ## 📄 License
 
-MIT License - See [LICENSE](LICENSE) for details.
-
----
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
----
-
-## 📧 Contact
-
-- Email: support@puzzlechain.com
-- Website: https://puzzlechain.com
+MIT License
 
 ---
 
